@@ -1,0 +1,16 @@
+= Controller
+
+* rake db:create
+* rake db:migrate
+
+Start beanstalkd
+
+= Workers
+
+* MACHINE=aa rake db:test:clone
+* MACHINE=aa rake dr:runner
+
+..
+
+* MACHINE=cc rake db:test:clone
+* MACHINE=cc rake dr:runner
